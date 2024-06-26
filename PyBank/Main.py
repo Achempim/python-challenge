@@ -1,9 +1,16 @@
 import csv
+import os
+os.chdir ('C:\\Users\\HP\Desktop\\Boot camp\\Challenge\\python-challenge\\PyBank')
+current_path=os.path.join("Resources","budget_data.csv")
+print (os.path.abspath(current_path))
+
+print("current workingdir")
+print(os.getcwd())
 
 # File path to your CSV file
-file_path = "C:/Users/HP/Desktop/python-challenge/PyBank/Resources/budget_data.csv"
+file_path = os.path.join("Resources","budget_data.csv")
 
-# Initialize variables
+# Initialize variables 
 total_months = 0
 net_total = 0
 previous_profit_loss = None

@@ -1,7 +1,15 @@
 import csv
+import os
+os.chdir(r'C:\Users\HP\Desktop\Boot camp\Challenge\python-challenge\PyPoll')
+current_path = os.path.join("Resources", "budget_data.csv")
+print(os.path.abspath(current_path))
+print("Current working directory:")
+print(os.getcwd())
 
 # File path to your CSV file
-file_path = "C:/Users/HP/Desktop/python-challenge/PyPoll/Resources/election_data.csv"
+file_path = os.path.join("Resources", "election_data.csv")
+
+print(file_path)
 
 # Initialize variables
 total_votes = 0
